@@ -1,6 +1,14 @@
 .navbar{
-    margin: 0px;
-    background-color: MediumTurquoise  ;
-    height: 80px;
+    margin: auto;
+    background-color: MediumTurquoise ;
+    height: 60px;
     display: flex;
+}
+.sidebar{
+    background-color: steelblue;
+    font-size: 50px;
+}
+
+.webname{
+    margin: 10px;
 }
