@@ -3,7 +3,7 @@
     margin-right:10px;
 }
 
-.nav-icon{
+.nav-icon-lighttoggle,.nav-icon-home{
     margin-left: 10px;
     margin-right: 10px;
     color: aliceblue;
@@ -12,4 +12,8 @@
 
 .web-name{
     margin-left: 200px;
+}
+.Navbar{
+    position:fixed;
+    width: 100%;
 }

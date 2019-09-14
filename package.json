@@ -5,16 +5,17 @@
   "dependencies": {
     "@material-ui/core": "^4.4.2",
     "@material-ui/icons": "^4.4.1",
+    "@mdi/font": "^4.4.95",
     "bootstrap": "^4.3.1",
     "lodash": "^4.17.15",
     "material-ui": "^0.20.2",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
+    "react-burger-menu": "^2.6.11",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1",
-    "react-sidebar": "^3.0.2",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"

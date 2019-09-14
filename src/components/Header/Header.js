@@ -9,7 +9,7 @@ export class Header extends Component {
 
     render() {
         return (
-          <Navbar bg="info" variant="dark">
+          <Navbar bg="info" variant="dark" className="Navbar">
               <Navbar.Brand className="web-name" href="#home">Movie System</Navbar.Brand>
               <Nav className="mr-auto" />
               <Form inline >
@@ -19,8 +19,8 @@ export class Header extends Component {
               <Navbar.Text className="login-user" >
                 User : <a href="#login">Leo Hsu</a>
               </Navbar.Text>
-              <EmojiObjectsIcon className="nav-icon"/>
-              <HomeIcon className="nav-icon"/>
+              <EmojiObjectsIcon className="nav-icon-lighttoggle"/>
+              <HomeIcon className="nav-icon-home"/>
           </Navbar>
         )
     }

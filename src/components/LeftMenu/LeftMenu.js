@@ -1,33 +1,31 @@
-import React from "react";
-import Sidebar from "react-sidebar";
+import React, { Component } from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import './left.css';
+import MovieFilterIcon from '@material-ui/icons/MovieFilter';
+import MovieCreationIcon from '@material-ui/icons/MovieCreation';
+import TheatersIcon from '@material-ui/icons/Theaters';
 
-class LeftMenu extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      sidebarOpen: true,
-    };
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-  }
+export class LeftMenu extends Component{
 
-  onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open });
-  }
-
-  render() {
+  render () {
     return (
-      <Sidebar
-        sidebar={<b>Sidebar content</b>}
-        open={this.state.sidebarOpen}
-        onSetOpen={this.onSetSidebarOpen}
-        styles={{ sidebar: { background: "white" } }}
-      >
-        <button onClick={() => this.onSetSidebarOpen(true)}>
-          Open
-        </button>
-      </Sidebar>
-    );
+      <Menu>
+        <div className="menu-block">
+          <MovieCreationIcon fontSize="large" className="icon" />
+          <a className="menu-item" href="/">Opening This Week</a>
+        </div>
+        <div className="menu-block">
+          <MovieFilterIcon fontSize="large" className="icon" />
+          <a className="menu-item" href="/about">Now Playing</a>
+        </div>
+        <div className="menu-block">
+          <TheatersIcon fontSize="large" className="icon" />
+          <a className="menu-item" href="/contact">Coming Soon</a>
+        </div>
+      </Menu>
+    )
   }
 }
 
-export default LeftMenu;
+
+export default LeftMenu
