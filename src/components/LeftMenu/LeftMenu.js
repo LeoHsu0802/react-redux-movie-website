@@ -1,6 +1,7 @@
 import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
-import './left.css';
+import './LeftMenu.css';
+import { Link } from 'react-router-dom'
 import MovieFilterIcon from '@material-ui/icons/MovieFilter';
 import MovieCreationIcon from '@material-ui/icons/MovieCreation';
 import TheatersIcon from '@material-ui/icons/Theaters';
@@ -8,22 +9,20 @@ import TheatersIcon from '@material-ui/icons/Theaters';
 function LeftMenu(){
     return (
       <Menu>
-        <div className="menu-block">
+        <Link to='./openingthisweek' className="menu-block">
           <MovieCreationIcon fontSize="large" className="icon" />
-          <a className="menu-item" href="/">Opening This Week</a>
-        </div>
-        <div className="menu-block">
+          <span className="menu-item">Opening This Week</span>
+        </Link>
+        <Link to='./nowplaying' className="menu-block">
           <MovieFilterIcon fontSize="large" className="icon" />
-          <a className="menu-item" href="/about">Now Playing</a>
-        </div>
-        <div className="menu-block">
+          <span className="menu-item">Now Playing</span>
+        </Link>
+        <Link to='./comingsoon' className="menu-block">
           <TheatersIcon fontSize="large" className="icon" />
-          <a className="menu-item" href="/contact">Coming Soon</a>
-        </div>
+          <span className="menu-item">Coming Soon</span>
+        </Link>
       </Menu>
     )
   }
-
-
 
 export default LeftMenu

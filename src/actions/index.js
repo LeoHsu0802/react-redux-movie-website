@@ -1,4 +1,4 @@
-export const toggle = () => {
+export const lightToggle = () => {
     return{
         type :　'TOGGLE'
     }
