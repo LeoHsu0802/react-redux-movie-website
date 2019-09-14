@@ -1,8 +1,10 @@
-const lightToggle = (state = false, action){
+const toggleReducer = (state = false, action) => {
     switch(action.type){
         case 'TOGGLE':
             return !state;
+        default:
+            return state;
     }
 }
 
-export default lightToggle;
+export default toggleReducer;

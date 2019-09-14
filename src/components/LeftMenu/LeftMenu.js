@@ -1,13 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import './left.css';
 import MovieFilterIcon from '@material-ui/icons/MovieFilter';
 import MovieCreationIcon from '@material-ui/icons/MovieCreation';
 import TheatersIcon from '@material-ui/icons/Theaters';
 
-export class LeftMenu extends Component{
-
-  render () {
+function LeftMenu(){
     return (
       <Menu>
         <div className="menu-block">
@@ -25,7 +23,7 @@ export class LeftMenu extends Component{
       </Menu>
     )
   }
-}
+
 
 
 export default LeftMenu

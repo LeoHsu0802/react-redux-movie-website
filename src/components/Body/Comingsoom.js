@@ -1,18 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './body.css';
 import comingsoonDatas from '../movielist/movie-comingsoon.json';
+import { useSelector } from 'react-redux';
 
-export class Comingsoom extends Component {
-
-    render() {
+function Comingsoom() {
+        const lightToggle = useSelector(state => state.lightToggle)
         const comingsoonData = comingsoonDatas.map(comingsoonData => comingsoonData)
-        console.log(comingsoonData.poster_url)
+        console.log(comingsoonData)
         return (
-            <div className="pg-body">
-                <h1>Comingsoom</h1>
+            <div className={lightToggle? "body-black" : "body-white" }>
+                <h1>comingsoonData</h1>
             </div>
         )
-    }
 }
 
 export default Comingsoom
