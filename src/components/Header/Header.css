@@ -10,6 +10,10 @@
     cursor: pointer;
 }
 
+.nav-icon-search{
+    color: aliceblue;
+}
+
 .web-name{
     margin-left: 150px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -17,4 +21,10 @@
 }
 .Navbar{
     width: 100%;
+}
+
+.mr-sm-1{
+    height: 35px;
+    width: 250px;
+    margin: 0 10px 0 5px;
 }

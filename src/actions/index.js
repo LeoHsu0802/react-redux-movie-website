@@ -3,3 +3,10 @@ export const lightToggle = () => {
         type :　'TOGGLE'
     }
 }
+
+export const searchMovie = (movie) => {
+    return{
+        type : "SEARCH",
+        payload : movie
+    }
+}

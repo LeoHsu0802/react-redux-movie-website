@@ -15,13 +15,23 @@
 }
 
 .carousel {
-    width:500px;
-    height:300px;
+    width:700px;
+    height:400px;
     overflow:hidden;
     margin: auto;
+    margin-bottom: 35px;
+}
+
+.col-lg-2{
+    margin:15px 15px 35px 15px;
 }
 
 img{
     width: 100%;
     height: 100%;
 }
+
+img:hover{
+    box-shadow:1px 0.5px 5px 1px #6d6d6d;
+}
+
