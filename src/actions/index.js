@@ -10,3 +10,11 @@ export const searchMovie = (movie) => {
         payload : movie
     }
 }
+
+export const userLogin = (username) => {
+    return{
+        type : "SEARCH",
+        payload : username
+    }
+}
+

@@ -1,0 +1,90 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .loginform {
+    outline: none;
+    position: fixed;
+    background-color: white;
+    margin: 15% 0% 0% 25%;
+    width: 250px;
+    height: 280px;
+    border: 2px solid rgb(25, 202, 173);
+    box-shadow: 1px 1px 1px rgb(78, 77, 77);
+    padding: 40px;
+    left: 15%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+}
+
+.circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    font-size: 48px;
+    line-height: 80px;
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(206, 252, 244);
+    background-color:rgb(25, 202, 173);
+  }
+
+.name-btn{
+    position: fixed;
+    cursor: pointer;
+    outline: none;
+    margin: 10px 0px 5px 35px ;
+    padding:px;
+    background:rgb(25, 202, 173);
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(25, 202, 173);
+    font-size: 16px;
+    width: 100px;
+    height: 32px;
+    font-weight: bolder;
+    color: #fff;
+    box-shadow: 0 2px 2px #999;
+}
+
+.name-btn:hover{
+    background:rgb(72, 226, 200);
+}
+
+.name-btn:active {
+    box-shadow: 0 1px 1px #666;
+    transform: translateY(2px);
+  }
+
+  .name-input{
+    outline: none;
+    margin: 20px 5px 0px 10px;
+    padding:5px;
+    background:rgb(253, 251, 248);
+    border-radius: 20px;
+    border-style: solid;
+    border-color: rgb(43, 218, 188);
+    width: 150px;
+    font-size: 18px; 
+    text-align: center;
+    caret-color:rgb(76, 214, 191);
+}
+
+.name-input:focus{
+    border-color: rgb(33, 172, 149);
+}
+
+.warning{
+  font-family: "微軟正黑體";
+  color: orangered;
+  font: bold;
+  margin-left: 45px;
+
+}

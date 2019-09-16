@@ -4,14 +4,15 @@ import './Header.css';
 import HomeIcon from '@material-ui/icons/Home';
 import EmojiObjectsIcon from '@material-ui/icons/EmojiObjects';
 import SearchIcon from '@material-ui/icons/Search';
-import { Navbar, Nav, Form, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, FormControl } from 'react-bootstrap';
 import { lightToggle, searchMovie } from '../../actions';
 import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 
 function Header() {
-
   const dispatch = useDispatch();
+  const userLogin = useSelector(state => state.userLogin)
 
       return (
         <Navbar bg="info" variant="dark" className="Navbar">

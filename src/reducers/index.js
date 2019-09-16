@@ -1,11 +1,11 @@
 import toggleReducer from './lightToggle';
-import loginReducer from './login'
-import searchReducer from './searchMovie'
+import loginReducer from './userLogin';
+import searchReducer from './searchMovie';
 import { combineReducers } from 'redux';
 
 const allReducers = combineReducers({
     lightToggle : toggleReducer,
-    login : loginReducer,
+    userLogin : loginReducer,
     searchMovie : searchReducer
 })
 
