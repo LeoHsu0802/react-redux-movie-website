@@ -18,7 +18,7 @@ function Comingsoom() {
         )
 
         return (
-            <div className={lightToggle? "body-black" : "body-white" }>
+            <div className={lightToggle? "body-black" : "" }>
                 <Carousel>
                     {movieDatas.map(movieData =>(
                         <Carousel.Item key={movieData.movie_id}>

@@ -5,7 +5,6 @@ import Comingsoon from './components/Body/Comingsoom';
 import Nowplaying from './components/Body/Nowplaying';
 import Openingthisweek from './components/Body/Openingthisweek';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import './App.css';
 
 function App() {
   return (
