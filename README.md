@@ -1,1 +1,4 @@
-movie-website
+react-redux-movie-website
+
+![image](https://github.com/LeoHsu0802/react-redux-movie-website/blob/master/src/images/movie-web-view.gif)
+
