@@ -13,7 +13,7 @@ export const searchMovie = (movie) => {
 
 export const userLogin = (username) => {
     return{
-        type : "SEARCH",
+        type : "LOGIN",
         payload : username
     }
 }

@@ -13,7 +13,6 @@ import { Link } from 'react-router-dom'
 function Header() {
   const dispatch = useDispatch();
   const userLogin = useSelector(state => state.userLogin)
-
       return (
         <Navbar bg="info" variant="dark" className="Navbar">
             <Link to='./' className="web-name">
@@ -28,7 +27,7 @@ function Header() {
                 onChange={(e) => dispatch(searchMovie(e.target.value))}
                 />
             <Navbar.Text className="login-user" >
-              User : <a href="#login">Leo Hsu</a>
+              User : <a href="#login">{userLogin.username}</a>
             </Navbar.Text>
             <EmojiObjectsIcon onClick={() => dispatch(lightToggle())} className="nav-icon-lighttoggle"/>
             <Link to='./'>

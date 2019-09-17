@@ -13,7 +13,7 @@ function Comingsoom() {
         const ENGLISH = new RegExp("[A-Za-z]+");
         //判斷查詢輸入是否為英文，若是英文則使用英文電影名來filter，否則使用中文電影名來filter
         const filterMovies = (ENGLISH.test(searchMovie)? 
-        movieDatas.filter(movies => {return movies.eng_name.indexOf(searchMovie) !== -1 }):
+        movieDatas.filter(movies => {return movies.eng_name.toLowerCase().indexOf(searchMovie) !== -1 }):
         movieDatas.filter(movies => {return movies.ch_name.indexOf(searchMovie) !== -1 })
         )
 
