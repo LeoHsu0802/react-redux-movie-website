@@ -9,12 +9,13 @@ import { useSelector } from 'react-redux';
 function Comingsoom() {
         const lightToggle = useSelector(state => state.lightToggle)
         const searchMovie = useSelector(state => state.searchMovie)
-        //正則英文判斷
-        const ENGLISH = new RegExp("[A-Za-z]+");
-        //判斷查詢輸入是否為英文，若是英文則使用英文電影名來filter，否則使用中文電影名來filter
-        const filterMovies = (ENGLISH.test(searchMovie)? 
-        movieDatas.filter(movies => {return movies.eng_name.indexOf(searchMovie) !== -1 }):
-        movieDatas.filter(movies => {return movies.ch_name.indexOf(searchMovie) !== -1 })
+        //正則中文判斷
+        const CHINESE = new RegExp("^[\u4E00-\u9FFF]+$")
+        //判斷查詢輸入是否為中文，若是中文則使用中文電影名來filter，否則使用英文電影名來filter
+        //統一影名英文小寫，方便比對
+        const filterMovies = (CHINESE.test(searchMovie)? 
+        movieDatas.filter(movies => {return movies.ch_name.indexOf(searchMovie) !== -1 }):
+        movieDatas.filter(movies => {return movies.eng_name.toLowerCase().indexOf(searchMovie) !== -1 })
         )
 
         return (
